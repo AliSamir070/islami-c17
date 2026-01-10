@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c17/ui/hadeht_details/screen/hadeth_details_screen.dart';
 import 'package:islami_c17/ui/home/screen/home_screen.dart';
+import 'package:islami_c17/ui/home/screen/onboarding/intro_screen.dart';
+import 'package:islami_c17/ui/sura_details/screen/sura_details_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: HomeScreen.routeName,
+      initialRoute: IntroScreen.routeName,
+      debugShowCheckedModeBanner: false,
       routes: {
-        HomeScreen.routeName:(_)=>HomeScreen()
+        HomeScreen.routeName:(_)=>HomeScreen(),
+        SuraDetailsScreen.routeName:(_)=>SuraDetailsScreen(),
+        HadethDetailsScreen.routeName:(_)=>HadethDetailsScreen(),
+        IntroScreen.routeName:(_)=>IntroScreen(),
       },
     );
   }

@@ -10,4 +10,23 @@ abstract final class AssetsManager{
   static const String radioSelectedTab = "assets/images/radio_selected.svg";
   static const String timeTab = "assets/images/time.svg";
   static const String timeSelectedTab = "assets/images/time_selected.svg";
+  static const String hadethBack = "assets/images/hadeth_back.png";
+  static const String hadethLeftCorner = "assets/images/hadith_left_corner.png";
+  static const String hadethRightCorner = "assets/images/hadith_right_corner.png";
+  static const String hadethItemBack = "assets/images/HadithCardBackGround 1.png";
+  static const String hadethMosque = "assets/images/hadeth_mosque.png";
+  static const String quranBack = "assets/images/quran_back.png";
+  static const String mostRecent = "assets/images/most_recent.png";
+  static const String suraNumber = "assets/images/sura_number.svg";
+  static const String quranLeftCorner = "assets/images/quran_left_corner.png";
+  static const String quranRightCorner = "assets/images/quran_right_corner.png";
+  static const String quranMosque = "assets/images/quran_mosque.png";
+  static const String sebhaBackground = "assets/images/sebha_background.png";
+  static const String sebhaBody = "assets/images/sebha_body.png";
+  static const String mask = "assets/images/mask.png";
+  static const String introPage1 = "assets/images/intro1.png";
+  static const String introPage2 = "assets/images/intro2.png";
+  static const String introPage3 = "assets/images/intro3.png";
+  static const String introPage4 = "assets/images/intro4.png";
+  static const String introPage5 = "assets/images/intro5.png";
 }
