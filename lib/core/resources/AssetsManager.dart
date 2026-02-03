@@ -21,4 +21,9 @@ abstract final class AssetsManager{
   static const String quranLeftCorner = "assets/images/quran_left_corner.png";
   static const String quranRightCorner = "assets/images/quran_right_corner.png";
   static const String quranMosque = "assets/images/quran_mosque.png";
+  static const String onboarding_1 = "assets/images/onboarding_1.png";
+  static const String onboarding_2 = "assets/images/onboarding_2.png";
+  static const String onboarding_3 = "assets/images/onboarding_3.png";
+  static const String onboarding_4 = "assets/images/onboarding_4.png";
+  static const String onboarding_5 = "assets/images/onboarding_5.png";
 }
