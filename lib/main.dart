@@ -4,9 +4,14 @@ import 'package:islami_c17/ui/home/screen/home_screen.dart';
 import 'package:islami_c17/ui/onboarding/onboarding.dart';
 import 'package:islami_c17/ui/sura_details/screen/sura_details_screen.dart';
 
-void main() {
+import 'core/cache/shared_prefs.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SharedPrefs.init();
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +21,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      initialRoute: Onboarding.routeName,
+      initialRoute: SharedPrefs.isOnboardingSeen()
+          ? HomeScreen.routeName
+          : Onboarding.routeName,
       debugShowCheckedModeBanner: false,
       routes: {
         HomeScreen.routeName:(_)=>HomeScreen(),

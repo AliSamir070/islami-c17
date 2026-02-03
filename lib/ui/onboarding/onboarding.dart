@@ -5,6 +5,8 @@ import 'package:islami_c17/model/onboardingModel.dart';
 import 'package:islami_c17/ui/home/screen/home_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../../core/cache/shared_prefs.dart';
+
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
 
@@ -113,11 +115,15 @@ class _OnboardingState extends State<Onboarding> {
                 ),
                 index == dataList.length - 1
                     ? TextButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, HomeScreen.routeName);
+                        onPressed: () async {
+                          await SharedPrefs.setOnboardingSeen();
+                          Navigator.pushReplacementNamed(
+                            context,
+                            HomeScreen.routeName,
+                          );
                         },
                         child: Text(
-                          "Skip",
+                          "Start",
                           style: TextStyle(
                             color: ColorsManager.primaryColor,
                             fontSize: 16,
