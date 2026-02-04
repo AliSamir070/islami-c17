@@ -26,4 +26,7 @@ abstract final class AssetsManager{
   static const String onboarding_3 = "assets/images/onboarding_3.png";
   static const String onboarding_4 = "assets/images/onboarding_4.png";
   static const String onboarding_5 = "assets/images/onboarding_5.png";
+  static const String sebha = "assets/images/sebha_body.png";
+  static const String sebha_bg = "assets/images/Sebha_bg.png";
+  static const String sebha_part = "assets/images/sebha_part.png";
 }
